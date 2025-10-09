@@ -1,5 +1,11 @@
 import React , {Component} from "react";
 
+
+const ContadorClase = () => {
+    
+    return
+}
+
 class ContadorClase extends Component {
     constructor(props) {
         super(props);
@@ -23,7 +29,7 @@ class ContadorClase extends Component {
         return (
             <div>
                 <h1>{texto}</h1>
-                <p>Clicks:{count}</p>
+                <p>Clicks: {count}</p>
                 <button onClick={this.incrementar}>Sumar Click</button>
                 <button onClick={this.decrementar}>Restar Click</button>
             </div>
