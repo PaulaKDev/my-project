@@ -2,7 +2,7 @@
   --bg-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   --btn-gradient: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
   --text-color: #fff;
-  --font-main: 'Poppins', system-ui, sans-serif;
+  --font-main: 'Poppins', sans-serif;
 }
 
 body {
@@ -16,25 +16,29 @@ body {
   color: var(--text-color);
 }
 
-.container {
+main {
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem 3rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  animation: fadeIn 1s ease-in-out;
 }
 
-.counter {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 1rem 0;
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 button {
@@ -52,9 +56,4 @@ button {
 button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(238, 9, 121, 0.5);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
