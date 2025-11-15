@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Espacio entre botones */
+  flex-wrap: wrap; /* Para pantallas pequeñas */
+}

@@ -12,13 +12,15 @@ const ContadorClase = () => {
     const decrementar = () => {
         setCount((prevCount) => prevCount - 1);
     };
-    
+
     return (
         <div>
             <h1>Contador de Clicks</h1>
             <p>Clicks: {count}</p>
+            <div className="button-group">
             <button onClick={incrementar}>Sumar Click</button>
             <button onClick={decrementar}>Restar Click</button>
+        </div>
         </div>
     );
 }
